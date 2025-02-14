@@ -16,7 +16,10 @@ const unsigned int WIDTH = 800;
 const unsigned int HEIGHT = 800;
 
 // Limites do Plano Cartesiano 2D -- Desenhado na Janela via OpenGL
-float xMin, xMax, yMin, yMax;
+float xMin = -100.0f;
+float xMax = 100.0f;
+float yMin = -100.0f;
+float yMax = 100.0f;
 
 //Variáveis Globais
 std::vector<ponto2D> segs;
@@ -233,11 +236,6 @@ void drawSegment(const ponto2D& p1, const ponto2D& p2, unsigned int shaderProgra
 }
 
 int main(){
-    std::cout << "Informe os limites para x (xMin xMax): ";
-    std::cin >> xMin >> xMax;
-    std::cout << "Informe os limites para y (yMin yMax): ";
-    std::cin >> yMin >> yMax;
-
     if (!glfwInit()) {
         std::cerr << "Erro ao inicializar GLFW" << std::endl;
         return -1;
