@@ -31,6 +31,8 @@ public:
 
     vec3 projection(const vec3& v) const; // projeção do vetor em v
     vec3 reflect(const char& c) const;
+
+    void normalize();
 };
 
 std::ostream& operator<<(std::ostream& os, const vec3& v);

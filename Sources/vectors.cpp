@@ -98,3 +98,11 @@ vec3 vec3::reflect(const char& c) const{
         return vec3(0.0, 0.0, 0.0);
     }
 }
+
+void vec3::normalize(){
+    double d = std::sqrt(std::pow(this->get_x(),2) + std::pow(this->get_y(),2));
+
+    this->x = x / d;
+    this->y = y / d;
+    this->z = z / d;
+}
