@@ -1,4 +1,5 @@
-# SegmentsIntersection
+# ParticlePhysics
+
 
 ## How to Execute
 
@@ -33,7 +34,15 @@ To successfully execute this project, please follow the steps below:
    cd /path/to/project/repository
    ```
 
-5. **Compile the Project**
+5. **Create a Bin Paste**
+
+   Create a paste to save the executable
+
+   ```bash
+   mkdir Bin
+   ```
+
+6. **Compile the Project**
 
    Use the `make` command to compile the project:
 
@@ -41,7 +50,7 @@ To successfully execute this project, please follow the steps below:
    make compile
    ```
 
-6. **Run the Project**
+7. **Run the Project**
 
    After compiling, execute the project with the following command:
 
@@ -52,10 +61,14 @@ To successfully execute this project, please follow the steps below:
 ## Manual
 
 - **Press R**: Randomly generates segments.
-- **Press E**: Clear all segments.
+- **Press E**: Clear all segments and particles.
+- **Press N**: Create new particles at the origin (0,0).
+
+- **Mouse Click Left**: Create segments.
+- **Mouse Click Right**: Create particles.
 
 ## Exhibition
 
 Below is a demonstration video showcasing the project's functionality:
 
-https://github.com/user-attachments/assets/0475de56-be8f-4aae-af4d-36510ba1b1ba
+https://github.com/user-attachments/assets/ebe849e8-81d7-4e7a-b0e4-35c05f9ba0ed
